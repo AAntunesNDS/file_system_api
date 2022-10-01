@@ -2,11 +2,10 @@ import json
 from flask import Flask, jsonify
 app = Flask(__name__)
 
-@app.route('/') 
-def hello_world():
-    response = jsonify('Hello world!')
-    response.status_code = 200
-    return response
+#TODO swagger route!!!!
+#TODO Artefato Database Peewee sqlite
+#TODO service class aws boto3
+
 
 @app.route('/folder', methods = ['GET', 'POST', 'DELETE'])
 def folder():
@@ -20,7 +19,6 @@ def folder():
         #TODO delete artefato on database SQL
     
     return print("test")
-
 
 
 @app.route('/file', methods = ['GET', 'POST', 'DELETE', 'UPDATE'])
