@@ -7,6 +7,9 @@ authors = ["Arthur Antunes <arthur.antunes.aa@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 Flask = "^2.2.2"
+flasgger = "^0.9.5"
+peewee = "^3.15.3"
+Flask-RESTful = "^0.3.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
