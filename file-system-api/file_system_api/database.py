@@ -19,7 +19,7 @@ class BaseModel(peewee.Model):
 
 class Document(BaseModel):
     name = peewee.CharField()
-    type_data = peewee.CharField(choices=TYPE_DOCUMENT)
+    type = peewee.CharField(choices=TYPE_DOCUMENT)
     url_pos_save = peewee.CharField()
     folder_parent_path = peewee.CharField()
     created_at = peewee.DateTimeField(default=datetime.datetime.now().strftime('%Y-%m-%d'))
