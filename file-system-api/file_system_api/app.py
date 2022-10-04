@@ -1,6 +1,6 @@
-from flask import Flask, jsonify, request
+from flask import Flask
 from flasgger import Swagger
-from flask_restful import Api, Resource
+from flask_restful import Api
 from database import Document
 from views import DocumentView
 
