@@ -11,7 +11,7 @@ class TestDocument(unittest.TestCase):
 
     mock_document_insert = {
         "name" : 'folder_1', 
-        "type_data" : TYPE_DOCUMENT[0], 
+        "type" : TYPE_DOCUMENT[0], 
         "url_pos_save" : "example.com.br", 
         "folder_parent_path" : "/", 
         "created_at" : datetime.datetime.now(),
