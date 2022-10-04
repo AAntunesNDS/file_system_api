@@ -1,8 +1,12 @@
+import sys
+sys.path.append('../')
+
 from flask import Flask
 from flasgger import Swagger
 from flask_restful import Api
-from database import Document
-from views import DocumentView
+
+from file_system_api.database import Document
+from file_system_api.views import DocumentView
 
 app = Flask(__name__)
 api = Api(app)

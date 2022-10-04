@@ -1,8 +1,7 @@
 import peewee
 import datetime
 
-from enumerations import TYPE_DOCUMENT
-
+from file_system_api.enumerations import TYPE_DOCUMENT
 
 db = peewee.SqliteDatabase('Document.db')
 

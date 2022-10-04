@@ -20,8 +20,8 @@ class FileSystemService():
 
     def create_file(self, file_name):
         try:
-            self.s3.Bucket(self.bucket).upload_file(f'file_system_api/temp/{file_name}', file_name)
-            os.remove(f'file_system_api/temp/{file_name}')
+            self.s3.Bucket(self.bucket).upload_file(f'temp/{file_name}', file_name)
+            os.remove(f'temp/{file_name}')
             url = self.create_url(self.bucket, file_name)
             return url
         except:
